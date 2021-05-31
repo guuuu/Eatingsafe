@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
+/*cores
+    AMARELO - #f8c365
+    SIDE BAR - #2b2936
+    place holders - #656b81
+    linhas / laranja - #c77136
+    fundo - #343240
+cores*/
+
+/*fades
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+fades*/
+
 * {
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
@@ -7,4 +23,170 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+}
+
+/*placeholders*/
+::placeholder {
+    color: #656b81;
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: #656b81;
+  }
+  
+  ::-ms-input-placeholder {
+    color: #656b81;
+  }
+/*placeholders*/
+
+body {
+    background-color: #343240;
+}
+
+.main{
+    /* border: 2px solid lime; */
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.mid{
+    /* border: 2px solid red; */
+    width: 20%;
+    height: 70%;
+    margin: 0 auto;
+    min-width: 270px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+.logo_img{
+    /* border: 2px solid yellowgreen; */
+    width: 147px;
+    height: 147px;
+}
+
+.arrow{
+    width: 30px;
+    height: 30px;  
+    transform: rotate(180deg);
+    float: right;
+    padding-left: 10px;
+    object-fit: contain;
+}
+
+.logo{
+    /* border: 2px solid pink; */
+    text-align: center;
+}
+
+.fields{
+    /* border: 2px solid white; */
+    margin-top: 50px;
+    color: #C77136;
+}
+
+
+.field{
+    /* border: 2px solid #15ff00; */
+    width: 100%;
+    display: inline-block;
+    border-bottom: 2px solid #C77136;
+}
+
+.field:first-child{
+    margin-bottom: 50px;
+}
+
+.lbl{
+    font-size: 20px;
+
+}
+
+.field_input{
+    margin-top: 27px;
+    font-size: 15px;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    box-shadow: none;
+    padding: 0px 0px 2px 5px;
+    width: 90%;
+    float: left;
+}
+
+.field_input:focus{
+    border: 0px;
+    outline: none;
+}
+
+.field_input:hover + .field{
+    border-bottom: 2px solid #f8c365;
+}
+
+.icon{
+    margin-top: 27px;
+    float: left;
+    width: 10%;
+    object-fit: contain;
+    display: block;
+}
+
+.reset{
+    /* border: 2px solid #888; */
+    width: 100%;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.link{
+    color: #C77136;
+    font-size: 12px;
+}
+
+.bottom{
+    /* border: 2px solid #ff0000; */
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bt{
+    border: 2px solid #C77136;
+    background-color: rgba(0,0,0,0);
+    font-size: 20px;
+    color: #C77136;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    font-weight: 700;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.bt:hover{
+    background-color: #C77136;
+    color: #343240;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.reg{
+    padding-top: 50px;
+    color: #C77136;
+    font-size: 12px;
 }

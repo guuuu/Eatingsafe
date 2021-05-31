@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eating safe</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="icon" href="assets/icons/logo.png" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Teste</h1>
+    <div class="main">
+        <div class="mid">
+            <div class="logo">
+                <img src="assets/icons/logo.png" alt="logo" class="logo_img">
+            </div>
+            <div class="fields">
+                <div class="field">
+                    <label class="lbl">Utilizador:</label>
+                    <input type="text" class="field_input" placeholder="Nome de utilizador">
+                    <img src="assets/icons/user-shape.png" class="icon" alt="user icon">
+                </div>
+                <div class="field">
+                    <label class="lbl">Password:</label>
+                    <input type="password" class="field_input" placeholder="************">
+                    <img src="assets/icons/padlock.png" class="icon" alt="lock icon">
+                </div>
+                <div class="reset">
+                    <a href="reset" class="link">Recuperar password</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button type="button" class="bt" id="bt">LOGIN <img src="assets/icons/chevron-pointing-to-the-left.png" class="arrow" alt="arrow"></button>
+                <p class="reg">Ainda não tem conta?  <a href="register" class="link">Registe-se</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

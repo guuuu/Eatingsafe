@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eating safe</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="icon" href="assets/icons/logo.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body class="register">
+    <div class="main">
+        <div class="mid">
+            <div class="col">
+                <div class="fields">
+                    <div class="field">
+                        <label class="lbl">Utilizador:</label>
+                        <input type="text" class="field_input" placeholder="Nome de utilizador">
+                        <img src="assets/icons/user-shape.png" class="icon" alt="user icon">
+                    </div>
+                    <div class="field">
+                        <label class="lbl">Email:</label>
+                        <input type="text" class="field_input" placeholder="alguem@exemplo.com">
+                        <img src="assets/icons/envelope.png" class="icon" alt="envelope icon">
+                    </div>
+                    <div class="field">
+                        <label class="lbl">Password:</label>
+                        <input type="password" class="field_input" placeholder="************">
+                        <img src="assets/icons/padlock.png" class="icon" alt="padlock icon">
+                    </div>
+                    <div class="field">
+                        <label class="lbl">Confirmar password:</label>
+                        <input type="password" class="field_input" placeholder="************">
+                        <img src="assets/icons/padlock.png" class="icon" alt="padlock icon">
+                    </div>
+                    <div class="field">
+                        <label class="lbl">Idade:</label>
+                        <input type="number" class="field_input" placeholder="21">
+                        <img src="assets/icons/calendar-page-empty.png" class="icon" alt="calendar icon">
+                    </div>
+                </div>
+            </div>
+            <div class="col_small">
+                <img src="assets/icons/logo.png" alt="logo" class="logo_img">
+            </div>
+            <div class="col">
+                <div class="fields under">
+                    <div class="field">
+                        <label class="lbl">Género:</label>
+                        <div class="check_row">
+                            <label class="sub_lbl">Masculino</label>
+                            <div class="check">
+                                <img src="assets/icons/correct-symbol.png" alt="checkmark" class="checkmark hide">
+                            </div>
+                        </div>
+                        <div class="check_row">
+                            <label class="sub_lbl">Feminino</label>
+                            <div class="check">
+                                <img src="assets/icons/correct-symbol.png" alt="checkmark" class="checkmark hide">
+                            </div>
+                        </div>
+                        <div class="check_row">
+                            <label class="sub_lbl">Outro</label>
+                            <div class="check">
+                                <img src="assets/icons/correct-symbol.png" alt="checkmark" class="checkmark hide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="row">
+                            <div class="l">
+                                <label class="lbl">Alergias: </label>
+                            </div>
+                            <div class="r">
+                                <img src="assets/icons/plus-black-symbol.png" alt="add" class="icon">
+                            </div>
+                        </div>
+                        <div class="alergies">
+                            <div class="alergie">
+                                <select name="alergies" id="0" class="drop">
+                                    <option value="-1" class="alergie_opt">Selecione uma alergia</option>
+                                    <option value="1" class="alergie_opt">1</option>
+                                    <option value="2" class="alergie_opt">2</option>
+                                    <option value="3" class="alergie_opt">3</option>
+                                    <option value="4" class="alergie_opt">4</option>
+                                    <option value="5" class="alergie_opt">5</option>
+                                </select>
+                                <div class="wrap">
+                                    <img src="assets/icons/chevron-pointing-to-the-left.png" alt="arrow" class="drop_arrow">
+                                </div>
+                            </div>
+
+                            <div class="alergie">
+                                <select name="alergies" id="1" class="drop">
+                                    <option value="-1" class="alergie_opt">Selecione uma alergia</option>
+                                    <option value="1" class="alergie_opt">1</option>
+                                    <option value="2" class="alergie_opt">2</option>
+                                    <option value="3" class="alergie_opt">3</option>
+                                    <option value="4" class="alergie_opt">4</option>
+                                    <option value="5" class="alergie_opt">5</option>
+                                </select>
+                                <div class="wrap">
+                                    <img src="assets/icons/chevron-pointing-to-the-left.png" alt="arrow" class="drop_arrow">
+                                </div>
+                            </div>
+
+                            <div class="alergie">
+                                <select name="alergies" id="2" class="drop">
+                                    <option value="-1" class="alergie_opt">Selecione uma alergia</option>
+                                    <option value="1" class="alergie_opt">1</option>
+                                    <option value="2" class="alergie_opt">2</option>
+                                    <option value="3" class="alergie_opt">3</option>
+                                    <option value="4" class="alergie_opt">4</option>
+                                    <option value="5" class="alergie_opt">5</option>
+                                </select>
+                                <div class="wrap">
+                                    <img src="assets/icons/chevron-pointing-to-the-left.png" alt="arrow" class="drop_arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <button class="bt_register" type="button">Registar</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

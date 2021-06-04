@@ -102,3 +102,64 @@ $(".bt_register").click(() => {
         console.log("Passwords diferentes");
     }
 })
+
+$("#profile").click(() => {
+    if(window.location.pathname != "/profile"){
+        window.location.href = "/profile"
+    }
+})
+
+$("#alergies").click(() => {
+    if(window.location.pathname != "/alergies"){
+        window.location.href = "/alergies"
+    }
+})
+
+$("#stats").click(() => {
+    if(window.location.pathname != "/stats"){
+        window.location.href = "/stats"
+    }
+})
+
+$("#leave").click(() => {
+    //do_logout()
+    window.location.href = "/login"
+})
+
+function collapse_sidebar(flag){ //false para encolher | true para estender
+    if(!flag){
+        $($($("#menu").parent()).parent()[0]).addClass("collapse");
+
+        $(".bt_bar").each(function() {
+            $(this).addClass("hide")
+        });
+
+        $("#menu").removeClass("icon_wrap").addClass("wrap_icon_collapsed");
+
+        $(".row").each(function() {
+            $($(this).children()[0]).removeClass("wrap_icon").addClass("wrap_icon_collapsed");
+        });
+
+        flag = true;
+    }
+    else{
+        $($($("#menu").parent()).parent()[0]).removeClass("collapse");
+        $(".bt_bar").each(function() {
+            $(this).removeClass("hide")
+        })
+
+        $("#menu").removeClass("wrap_icon_collapsed").addClass("icon_wrap");
+
+        $(".row").each(function() {
+            $($(this).children()[0]).removeClass("wrap_icon_collapsed").addClass("wrap_icon");
+        });
+
+        flag = false;
+    }
+}
+
+let flag = false;
+$("#menu").click(function() {
+    collapse_sidebar(flag)
+    flag = !flag;
+})

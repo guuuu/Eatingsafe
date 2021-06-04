@@ -10,38 +10,40 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body class="profile">
-    <div class="sidebar">
+    <div class="sidebar smooth" id="sidebar">
         <div class="top">
-            <div class="icon_wrap">
-                <img src="assets/icons/reorder-option.png" alt="menu" class="icon l">
+            <div class="icon_wrap" id="menu">
+                <img src="assets/icons/reorder-option.png" alt="menu" class="icon">
             </div>
         </div>
         <div class="content">
-            <div class="row">
-                <img src="assets/icons/user-shape.png" alt="user icon" class="icon l">
+            <div class="row smooth" id="profile">
+                <div class="wrap_icon">
+                    <img src="assets/icons/user-shape.png" alt="user icon" class="icon">
+                </div>
                 <button class="bt_bar" type="button">Perfil</button>
             </div>
-            <div class="row">
-                <img src="assets/icons/medical-kit.png" alt="user icon" class="icon l">
+            <div class="row smooth" id="alergies">
+                <div class="wrap_icon"><img src="assets/icons/medical-kit.png" alt="user icon" class="icon"></div>
                 <button class="bt_bar" type="button">Alergias</button>
             </div>
-            <div class="row">
-                <img src="assets/icons/bar-graph-on-a-rectangle.png" alt="user icon" class="icon l">
+            <div class="row smooth" id="stats">
+                <div class="wrap_icon"><img src="assets/icons/bar-graph-on-a-rectangle.png" alt="user icon" class="icon"></div>
                 <button class="bt_bar" type="button">Estatisticas</button>
             </div>
         </div>
         <div class="bottom">
-            <div class="row">
-                <img src="assets/icons/sign-out-option.png" alt="user icon" class="icon l">
+            <div class="row smooth" id="leave">
+                <div class="wrap_icon"><img src="assets/icons/sign-out-option.png" alt="user icon" class="icon"></div>
                 <button class="bt_bar" type="button">Sair</button>
             </div>
         </div>
     </div>
 
-    <!-- <div class="content">
+    <div class="pfcontent">
         <div class="top">
             <div class="outline">
-                <img src="" alt="profile picture" class="pfp">
+                <img src="assets/icons/holder.jpg" alt="profile picture" class="pfp">
             </div>
             <div class="edit">
                 <img src="assets/icons/pencil.png" alt="edit" class="icon">
@@ -100,7 +102,7 @@
         <div class="bottom">
             <button class="bt_save" type="button">Guardar Alterações</button>
         </div>
-    </div> -->
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

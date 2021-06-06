@@ -140,6 +140,8 @@ function collapse_sidebar(flag){ //false para encolher | true para estender
             $($(this).children()[0]).removeClass("wrap_icon").addClass("wrap_icon_collapsed");
         });
 
+        $(".pfcontent").css("width", "97%");
+
         flag = true;
     }
     else{
@@ -154,6 +156,8 @@ function collapse_sidebar(flag){ //false para encolher | true para estender
             $($(this).children()[0]).removeClass("wrap_icon_collapsed").addClass("wrap_icon");
         });
 
+        $(".pfcontent").css("width", "80%");
+
         flag = false;
     }
 }
@@ -163,3 +167,30 @@ $("#menu").click(function() {
     collapse_sidebar(flag)
     flag = !flag;
 })
+
+$("#prompt").click(() => {
+    var input = document.createElement('input');
+    input.type = 'file';
+    
+    input.onchange = e => { 
+       var file = e.target.files[0]; 
+       console.log(file);
+    //    $("#pfp").attr("src", )
+    }
+    
+    input.click();
+})
+
+let changed = false;
+$(window).resize(() => {
+    if($(window).width() <= 1034 && !changed){
+        collapse_sidebar(flag);
+        flag = !flag;
+        changed = true
+    }
+    else if($(window).width() >= 1034 && changed){
+        collapse_sidebar(flag);
+        flag = !flag;
+        changed = false;
+    }
+});

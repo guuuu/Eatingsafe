@@ -152,10 +152,13 @@ body {
     padding-left: 10px;
     border: none;
     float: left;
-    border-right: 2px solid #C77136;
     font-size: 20px;
     color: #C77136;
     background-color: rgba(0,0,0,0);
+}
+
+.sidebar .active{
+    border-right: 2px solid #C77136;
 }
 
 .sidebar .bt_bar:hover{
@@ -601,9 +604,8 @@ body {
 /*register*/
 
 /*profile*/
-
 .profile .pfcontent{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     width: 80%;
     height: 100%;
@@ -616,16 +618,24 @@ body {
 }
 
 .profile .pfcontent .top{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 100%;
     height: 25%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .profile .pfcontent .pfp{
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.profile .pfcontent .top .group{
+    /* border: 2px solid lime; */
+    width: 25%;
 }
 
 .profile .pfcontent .outline{
@@ -634,24 +644,285 @@ body {
     border: 2px solid #C77136;
     border-radius: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .pfcontent .top .right{
+    /* border: 2px solid black; */
+    margin-top: -25px;
+    width: 43%;
 }
 
 .profile .pfcontent .edit{
-    position: absolute;
     width: 50px;
     height: 50px;
     border: 2px solid #C77136;
     border-radius: 100%;
-    margin: 0 auto;
+    margin-top: -25px;
+    background-color: #343240;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+}
+
+.profile .pfcontent .edit:hover{
+    background-color: #4a475c;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.profile .pfcontent .edit .icon{
+    /* border: 2px solid red; */
+    width: 25px;
+    height: 25px;
+}
+
+.profile .pfcontent .middle{
+    /* border: 2px solid lime; */
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .pfcontent .middle .row{
+    /* border: 2px solid lime; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .pfcontent .middle .row .small{
+    width: 50%;
+}
+
+.profile .pfcontent .left{
+    width: 45%;
+    float: left;
+}
+
+.profile .pfcontent .right{
+    width: 45%;
+    float: right;
+}
+
+.profile .pfcontent .smaller_row{
+    /* border: 2px solid red; */
+    width: 50%;
+}
+
+.profile .pfcontent .fields{
+    /* border: 2px solid yellow; */
+    color: #C77136;
+    width: 100%;
+}
+
+.profile .pfcontent .field{
+    /* border: 2px solid cyan; */
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid #C77136;
+    margin-top: 50px;
+}
+
+.profile .pfcontent .field:first-child{
+    margin-top: 0px;
+}
+
+.profile .pfcontent .lbl{
+    /* border: 2px solid yellow; */
+    font-size: 20px;
+}
+
+.profile .pfcontent .field_input{
+    /* border: 2px solid red; */
+    margin-top: 27px;
+    font-size: 15px;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    box-shadow: none;
+    padding: 0px 0px 2px 5px;
+    width: 90%;
+    float: left;
+}
+
+.profile .pfcontent .field_input:focus{
+    outline: none;
 }
 
 
+.profile .pfcontent .middle .img_wrapper{
+    /* border: 2px solid white; */
+    width: 10%;
+    height: 25px;
+    object-fit: contain;
+    float: left;
+    margin-top: 27px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.profile .pfcontent .bottom{
+    /* border: 2px solid slateblue; */
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .pfcontent .bottom .bt_save{
+    width: 25%;
+    height: 100%;
+    font-weight: 700;
+    background-color: rgba(0,0,0,0);
+    color: #C77136;
+    border: 2px solid #C77136;
+    font-size: 20px;
+}
+
+.profile .pfcontent .bottom .bt_save:hover{
+    background-color: #C77136;
+    color: #343240;
+    cursor: pointer;
+    font-weight: 700;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
 /*profile*/
 
+/*reset*/
 
+.reset .main{
+    /* border: 2px solid red; */
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-width: 300px;
+    min-height: 200px;
+}
+
+/* .reset .main .logo{
+    width: 100%;
+    height: 10%;
+    border: 2px solid white;
+} */
+
+.reset .icon{
+    margin-top: 27px;
+    float: left;
+    width: 10%;
+    height: 20px;
+    object-fit: contain;
+    display: block;
+}
+
+.reset .lbl{
+    font-size: 20px;
+}
+
+.reset .fields{
+    /* border: 2px solid yellow; */
+    color: #C77136;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+    margin: auto;
+}
+
+.reset .field{
+    /* border: 2px solid cyan; */
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid #C77136;
+    margin-top: 50px;
+}
+
+.reset .field:first-child{
+    margin-top: 0px;
+}
+
+.reset .lbl{
+    font-size: 20px;
+}
+
+.reset .field_input{
+    margin-top: 27px;
+    font-size: 15px;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    box-shadow: none;
+    padding: 0px 0px 2px 5px;
+    width: 90%;
+    float: left;
+}
+
+.reset .field_input:focus{
+    outline: none;
+}
+
+.reset .bottom{
+    /* border: 2px solid lime; */
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset .bt_reset{
+    bottom: 0;
+    height: 100%;
+    width: 45%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #C77136;
+    border: 2px solid #C77136;
+    background-color: rgba(0,0,0,0);
+    min-width: 200px;
+}
+
+.reset .bt_reset:hover{
+    background-color: #C77136;
+    cursor: pointer;
+    color: #343240;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.reset .bt_reset:focus{
+    outline: none;
+}
+/*reset*/
 
 
 

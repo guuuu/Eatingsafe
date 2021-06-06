@@ -21,7 +21,7 @@
                 <div class="wrap_icon">
                     <img src="assets/icons/user-shape.png" alt="user icon" class="icon">
                 </div>
-                <button class="bt_bar" type="button">Perfil</button>
+                <button class="bt_bar active" type="button">Perfil</button>
             </div>
             <div class="row smooth" id="alergies">
                 <div class="wrap_icon"><img src="assets/icons/medical-kit.png" alt="user icon" class="icon"></div>
@@ -42,65 +42,91 @@
 
     <div class="pfcontent">
         <div class="top">
-            <div class="outline">
-                <img src="assets/icons/holder.jpg" alt="profile picture" class="pfp">
-            </div>
-            <div class="edit">
-                <img src="assets/icons/pencil.png" alt="edit" class="icon">
+            <div class="group">
+                <div class="outline">
+                    <img src="assets/icons/holder.jpg" alt="profile picture" class="pfp" id="pfp">
+                </div>
+                <div class="right">
+                    <div class="edit smooth" id="prompt">
+                        <img src="assets/icons/pencil.png" alt="edit" class="icon">
+                        <input id="file-input" type="file" name="name" style="display: none;" />
+                    </div>
+                </div>
             </div>
         </div>
-
         <div class="middle">
-            <div class="row">
-                <div class="left">
-                    <div class="field">
-                        <label class="lbl">Primeirio nome:</label>
-                        <input type="text" class="field_input" placeholder="Alguem">
-                        <img src="assets/icons/user-shape.png" class="icon" alt="user icon">
+            <div class="fields">
+                <div class="row">
+                    <div class="smaller_row">
+                        <div class="left">
+                            <div class="field">
+                                <label class="lbl">Primeirio nome:</label>
+                                <input type="text" class="field_input" placeholder="Alguem">
+                                <div class="img_wrapper">
+                                    <img src="assets/icons/user-shape.png" class="icon" alt="user icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="field">
+                                <label class="lbl">Último nome:</label>
+                                <input type="text" class="field_input" placeholder="Sobrenome">
+                                <div class="img_wrapper">
+                                    <img src="assets/icons/user-shape.png" class="icon" alt="user icon">                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="field">
-                        <label class="lbl">Último nome:</label>
-                        <input type="text" class="field_input" placeholder="Último de utilizador">
-                        <img src="assets/icons/user-shape.png" class="icon" alt="user icon">
+                <div class="row">
+                    <div class="small">
+                        <div class="field">
+                            <label class="lbl">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="email" class="field_input" placeholder="alguem@exemplo.com">
+                            <div class="img_wrapper">
+                                <img src="assets/icons/envelope.png" class="icon" alt="envelope icon">
+                            </div> 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="field">
-                    <label class="lbl">Email:</label>
-                    <input type="text" class="field_input" placeholder="alguem@exemplo.com">
-                    <img src="assets/icons/user-shape.png" class="icon" alt="user icon">
-                </div>
-            </div>
-            <div class="row">
-                <div class="field">
-                    <label class="lbl">Telemovel:</label>
-                    <input type="text" class="field_input" placeholder="910000000">
-                    <img src="assets/icons/user-shape.png" class="icon" alt="user icon">
-                </div>
-            </div>
-            <div class="row">
-                <div class="left">
-                    <div class="field">
-                        <label class="lbl">Nova password:</label>
-                        <input type="password" class="field_input" placeholder="Alguem">
-                        <img src="assets/icons/user-shape.png" class="icon" alt="user icon">
+                <div class="row">
+                    <div class="small">
+                        <div class="field">
+                            <label class="lbl">Telemovel:</label>
+                            <input type="text" class="field_input" placeholder="910000000" minlength="9">
+                            <div class="img_wrapper">
+                                <img src="assets/icons/padlock.png" class="icon" alt="padlock icon">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="field">
-                        <label class="lbl">Repetir password:</label>
-                        <input type="password" class="field_input" placeholder="Último de utilizador">
-                        <img src="assets/icons/user-shape.png" class="icon" alt="user icon">
+                <div class="row">
+                    <div class="smaller_row">
+                        <div class="left">
+                            <div class="field">
+                                <label class="lbl">Password:</label>
+                                <input type="password" class="field_input" placeholder="************">
+                                <div class="img_wrapper">
+                                    <img src="assets/icons/padlock.png" class="icon" alt="padlock icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="field">
+                                <label class="lbl">Confirmar password:</label>
+                                <input type="password" class="field_input" placeholder="************">
+                                <div class="img_wrapper">
+                                    <img src="assets/icons/padlock.png" class="icon" alt="padlock icon">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="bottom">
-            <button class="bt_save" type="button">Guardar Alterações</button>
+            <button class="bt_save smooth" type="button">Guardar Alterações</button>
         </div>
     </div>
     <script src="assets/js/script.js"></script>

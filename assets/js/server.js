@@ -20,6 +20,10 @@ app.get("/profile", (req, res) => {
     res.sendFile(path.join(__dirname + "\\..\\..", "profile.html"));
 });
 
+app.get("/reset", (req, res) => {
+    res.sendFile(path.join(__dirname + "\\..\\..", "reset.html"));
+});
+
 app.post("/do_login", (req, res) => {
     const { user, pwd } = req.body;
     if(user === "admin" && pwd === "admin"){

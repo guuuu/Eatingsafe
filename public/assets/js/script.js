@@ -141,6 +141,7 @@ function collapse_sidebar(flag){ //false para encolher | true para estender
         });
 
         $(".pfcontent").css("width", "97%");
+        $(".main").css("width","97%")
 
         flag = true;
     }
@@ -157,6 +158,7 @@ function collapse_sidebar(flag){ //false para encolher | true para estender
         });
 
         $(".pfcontent").css("width", "80%");
+        $(".main").css("width","80%")
 
         flag = false;
     }
@@ -194,3 +196,13 @@ $(window).resize(() => {
         changed = false;
     }
 });
+
+$(".bt").click(function(){
+    if($("#info").hasClass("hide")){
+        $("#info").removeClass("hide")
+        $("#info").addClass("hident")
+    }else{
+        $("#info").removeClass("hident")
+        $("#info").addClass("hide")
+    }
+})

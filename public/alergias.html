@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eating safe</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="icon" href="assets/icons/logo.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body class="alergias">
+    <div class="sidebar smooth" id="sidebar">
+        <div class="top">
+            <div class="icon_wrap" id="menu">
+                <img src="assets/icons/reorder-option.png" alt="menu" class="icon">
+            </div>
+        </div>
+        <div class="content">
+            <div class="row smooth" id="profile">
+                <div class="wrap_icon">
+                    <img src="assets/icons/user-shape.png" alt="user icon" class="icon">
+                </div>
+                <button class="bt_bar" type="button">Perfil</button>
+            </div>
+            <div class="row smooth" id="alergies">
+                <div class="wrap_icon"><img src="assets/icons/medical-kit.png" alt="user icon" class="icon"></div>
+                <button class="bt_bar active" type="button">Alergias</button>
+            </div>
+            <div class="row smooth" id="stats">
+                <div class="wrap_icon"><img src="assets/icons/bar-graph-on-a-rectangle.png" alt="user icon"
+                        class="icon"></div>
+                <button class="bt_bar" type="button">Estatisticas</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="row smooth" id="leave">
+                <div class="wrap_icon"><img src="assets/icons/sign-out-option.png" alt="user icon" class="icon"></div>
+                <button class="bt_bar" type="button">Sair</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="opcoes">
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Crustáceos e produtos à base de crustáceos</p>
+                <button type="button" class="bt" id="1"><img src="assets/icons/information-button.png" alt="logo"
+                        class="logo_img"></button>
+            </div>
+
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Ovos e produtos à base de ovos</p>
+                <button type="button" class="bt" id="2">
+                    <img src="assets/icons/information-button.png" alt="logo" class="logo_img">
+                </button>
+            </div>
+
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Peixes e produtos à base de peixe</p>
+
+                <button type="button" class="bt" id="3">
+                    <img src="assets/icons/information-button.png" alt="logo" class="logo_img">
+                </button>
+
+            </div>
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Amendoins e produtos à base de amendoins</p>
+
+                <button type="button" class="bt" id="4">
+                    <img src="assets/icons/information-button.png" alt="logo" class="logo_img">
+                </button>
+
+            </div>
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Soja e produtos à base de soja</p>
+
+                <button type="button" class="bt" id="5">
+                    <img src="assets/icons/information-button.png" alt="logo" class="logo_img">
+                </button>
+
+            </div>
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Leite e produtos à base de leite</p>
+
+                <button type="button" class="bt" id="6">
+                    <img src="assets/icons/information-button.png" alt="logo" class="logo_img">
+                </button>
+
+            </div>
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Frutos de casca rija</p>
+
+                <button type="button" class="bt" id="7">
+                    <img src="assets/icons/information-button.png" alt="logo" class="logo_img">
+                </button>
+
+            </div>
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Aipos e produtos à base de aipos</p>
+
+                <button type="button" class="bt" id="8">
+                    <img src="assets/icons/information-button.png" alt="logo" class="logo_img">
+                </button>
+
+            </div>
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Mostarda e produtos à base de mostarda</p>
+
+                <button type="button" class="bt" id="9">
+                    <img src="assets/icons/information-button.png" alt="logo" class="logo_img">
+                </button>
+
+            </div>
+
+            <div class="alergia">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Sementes de sésamo</p>
+
+                <button type="button" class="bt" id="10">
+                    <img src="assets/icons/information-button.png" alt="logo" class="logo_img">
+                </button>
+            </div>
+
+            <div class="bottom">
+                <button type="button" class="bt_save" id="btt">Guardar Alterações</button>
+            </div>
+        </div>
+    <div class="hide" id="info">
+        <div class="texto">
+            <h1>Sobre</h1>
+            <h2>Crustáceos e produtos à base de crustáceos</h2>
+            <img src="assets/icons/crab.jpg" alt="crab" class="imagem">
+            <p>Os crustáceos (lat. crusta, carapaça dura) são animais invertebrados artropódes. Entre eles estão alguns dos animais mais comuns que conhecemos, como siris, caranguejos , tatuzinhos-de-jardim, lagostas, cracas e camarões. Há mais de 67.000 espécies descritas de Crustáceos da fauna atual, e provavelmente um número 5 ou 10 vezes maior de espécies estão ainda para serem descobertas e catalogadas.
+                Eles se apresentam como os animais mais abundantes, diversificados e com maior distribuição nos oceanos.
+                Os crustáceos exibem uma diversidade impressionante de forma, de hábitos e de tamanho. O menor crustáceo conhecido apresenta menos de 100de comprimento. Os maiores são os caranguejos-aranha do Japão (Macrocheira kaempferi), com 4m de abertura de pernas, e o caranguejo gigante da Tasmânia (Pseudocarcinus gigas).
+                A maioria dos crustáceos são aquáticos, sendo encontrados em todas as profundidades dos diversos ambientes marinhos (planctônicos, bentônicos). Também existem muitas espécies de água doce, além de grupos semi-terrestres (e.g. manguezais). Alguns grupos obtiveram sucesso em ambiente terrestre. Geralmente os crustáceos tem hábito de vida livre, mas há grupos parasitas (Branchiura) e sesséis (Cirripedia).</p>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

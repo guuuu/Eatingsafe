@@ -1,39 +1,20 @@
-$("#profile").click(() => {
-    if(window.location.pathname != "/profile"){
-        window.location.href = "/profile"
-    }
-})
+$("#profile").click(() => { if(window.location.pathname != "/profile"){ window.location.href = "/profile" } });
 
-$("#alergies").click(() => {
-    if(window.location.pathname != "/alergies"){
-        window.location.href = "/alergies"
-    }
-})
+$("#alergies").click(() => { if(window.location.pathname != "/alergies"){ window.location.href = "/alergies" } });
 
-$("#stats").click(() => {
-    if(window.location.pathname != "/stats"){
-        window.location.href = "/stats"
-    }
-})
+$("#stats").click(() => { if(window.location.pathname != "/stats"){ window.location.href = "/stats" } });
 
-$("#leave").click(() => {
-    //do_logout()
-    window.location.href = "/login"
-})
+$("#leave").click(() => { window.location.href = "/login" });
 
 function collapse_sidebar(flag){ //false para encolher | true para estender
     if(!flag){
         $($($("#menu").parent()).parent()[0]).addClass("collapse");
 
-        $(".bt_bar").each(function() {
-            $(this).addClass("hide")
-        });
+        $(".bt_bar").each(function() { $(this).addClass("hide") });
 
         $("#menu").removeClass("icon_wrap").addClass("wrap_icon_collapsed");
 
-        $(".row").each(function() {
-            $($(this).children()[0]).removeClass("wrap_icon").addClass("wrap_icon_collapsed");
-        });
+        $(".row").each(function() { $($(this).children()[0]).removeClass("wrap_icon").addClass("wrap_icon_collapsed"); });
 
         $(".pfcontent").css("width", "97%");
         $(".main").css("width","97%")
@@ -42,15 +23,11 @@ function collapse_sidebar(flag){ //false para encolher | true para estender
     }
     else{
         $($($("#menu").parent()).parent()[0]).removeClass("collapse");
-        $(".bt_bar").each(function() {
-            $(this).removeClass("hide")
-        })
+        $(".bt_bar").each(function() { $(this).removeClass("hide") })
 
         $("#menu").removeClass("wrap_icon_collapsed").addClass("icon_wrap");
 
-        $(".row").each(function() {
-            $($(this).children()[0]).removeClass("wrap_icon_collapsed").addClass("wrap_icon");
-        });
+        $(".row").each(function() { $($(this).children()[0]).removeClass("wrap_icon_collapsed").addClass("wrap_icon"); });
 
         $(".pfcontent").css("width", "80%");
         $(".main").css("width","80%")
@@ -142,7 +119,9 @@ $(window).ready(() => {
             });
         
             last_id = this.id;
-        })
+        });
+
+        $("#btt").click(() => { alert("Alterações guardadas com sucesso!") });
 
         $.ajax({
             url: "/get_alergies",
@@ -176,7 +155,7 @@ $(window).ready(() => {
                     window.location.href = "profile"
                 }
                 else{
-                    alert("Login mal")
+                    alert("Dados incorretos!")
                 }
             });
         });
@@ -187,11 +166,6 @@ $(window).ready(() => {
         $(".check").click(function(){
             $(".check").each(function() { if(!$($(this).children()[0]).hasClass("hide")) { $($(this).children()[0]).addClass("hide"); } });
             $($(this).children()[0]).removeClass("hide");
-        });
-        
-        $(".drop_arrow").click(function() {
-            //$($($(this).parent()[0]).parent()).children()[0]
-            console.log($($($(this).parent()[0]).parent()).children()[0]);
         });
         
         function add_options(element){
@@ -245,45 +219,54 @@ $(window).ready(() => {
         })
         
         $(".bt_register").click(() => {
-            if($($(".field_input")[2]).val() == $($(".field_input")[3]).val()){
-                let gender = "";
-                let alergies = new Array();
-        
-                $(".check").each(function() {
-                    if(!$($(this).children()).hasClass("hide")){
-                        gender = String($($($(this).parent()).children()[0]).text()).substr(0, 1) 
-                    } 
-                });
-        
-                $(".alergie").each(function() {
-                    let value = parseInt($($($(this).children()[0]).children("option:selected")).val());
-                    if(!alergies.includes(value) && value != -1 ){
-                        alergies.push(value)
-                    }
-                });
-        
-                let data = {
-                    user: $($(".field_input")[0]).val(),
-                    email: $($(".field_input")[1]).val(),
-                    pwd: $($(".field_input")[2]).val(),
-                    age: $($(".field_input")[3]).val(),
-                    gender: gender,
-                    alergies: alergies
-                }
-        
-                $.ajax({
-                    url: "/do_regist",
-                    method: "POST",
-                    dataType: "JSON",
-                    contentType: 'application/json; charset=utf-8',
-                    data: JSON.stringify(data)
-                }).done((response) => {
-                    console.log(response);
-                })
-            }
-            else{
-                console.log("Passwords diferentes");
-            }
+            if($($(".field_input")[0]).val().trim() !== ""){
+                if($($(".field_input")[1]).val().trim() !== "" && $($(".field_input")[1]).val().trim().includes("@") && $($(".field_input")[1]).val().trim().replace(/[^@]/g, "").length < 2){
+                    if($($(".field_input")[2]).val() !== ""){
+                        if($($(".field_input")[2]).val() === $($(".field_input")[3]).val()){
+                            if(String($($(".field_input")[4]).val()).trim() !== ""){
+                                let gender = "";
+                                let alergies = new Array();
+                        
+                                $(".check").each(function() {
+                                    if(!$($(this).children()).hasClass("hide")){
+                                        gender = String($($($(this).parent()).children()[0]).text()).substr(0, 1) 
+                                    } 
+                                });
+                                
+                                if(gender !== ""){
+                                    $(".alergie").each(function() {
+                                        let value = $($($(this).children()[0]).children("option:selected")).val();
+                                        if(!alergies.includes(value) && value != "Selecione uma alergia" ){
+                                            alergies.push(value)
+                                        }
+                                    });
+                                    let data = {
+                                        user: $($(".field_input")[0]).val(),
+                                        email: $($(".field_input")[1]).val(),
+                                        pwd: $($(".field_input")[2]).val(),
+                                        age: $($(".field_input")[4]).val(),
+                                        gender: gender,
+                                        alergies: alergies
+                                    }
+                            
+                                    $.ajax({
+                                        url: "/do_regist",
+                                        method: "POST",
+                                        dataType: "JSON",
+                                        contentType: 'application/json; charset=utf-8',
+                                        data: JSON.stringify(data)
+                                    }).done((response) => {
+                                        console.log(response);
+                                        alert("Conta criada com sucesso");
+                                        window.location.href = "/login";
+                                    })
+                                } else{ alert("Indique o seu gênero") }
+                            }
+                            else{ alert("Idade incorreta"); }
+                        } else{ alert("As passwords não coicidem"); }
+                    } else { alert("As passwords não podem ser vazias") }
+                } else{ alert("Email inválido"); }
+            } else{ alert("Utilizador inválido"); }
         })
     }
 
@@ -293,11 +276,23 @@ $(window).ready(() => {
             input.type = 'file';
             
             input.onchange = e => { 
-               var file = e.target.files[0]; 
-               console.log(file);
+               var file = e.target.files[0];
             }
             
             input.click();
-        })
+        });
+
+        $("#bt_pf").click(() => { alert("Alterações guardadas com sucesso!") });
+    }
+
+    if(window.location.pathname === "/reset"){
+        $("#bt_reset").click(() => { 
+            if($($(".field_input")[0]).val().trim() !== "" && $($(".field_input")[0]).val().trim().includes("@") && $($(".field_input")[0]).val().trim().replace(/[^@]/g, "").length < 2){
+                alert("Foi lhe enviado um email com o link de recuperação!") 
+            }
+            else{
+                alert("Email inválido");
+            }
+        });
     }
 })

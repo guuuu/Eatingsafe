@@ -4,33 +4,34 @@ const app = express();
 const port = process.env.PORT || 8080;
 const path = require("path");
 const fs = require("fs");
+const p = __dirname + "\\..\\..\\public"
 
-app.use(express.static(__dirname + "\\..\\..\\public"));
+app.use(express.static(p));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/login", (req, res) => {
-    res.sendFile(path.join(__dirname + "\\..\\..\\public", "login.html"));
+    res.sendFile(path.join(p, "login.html"));
 });
 
 app.get("/register", (req, res) => {
-    res.sendFile(path.join(__dirname + "\\..\\..\\public", "register.html"));
+    res.sendFile(path.join(p, "register.html"));
 });
 
 app.get("/profile", (req, res) => {
-    res.sendFile(path.join(__dirname + "\\..\\..\\public", "profile.html"));
+    res.sendFile(path.join(p, "profile.html"));
 });
 
 app.get("/reset", (req, res) => {
-    res.sendFile(path.join(__dirname + "\\..\\..\\public", "reset.html"));
+    res.sendFile(path.join(p, "reset.html"));
 });
 
 app.get("/alergies", (req, res) => {
-    res.sendFile(path.join(__dirname + "\\..\\..\\public", "alergias.html"));
+    res.sendFile(path.join(p, "alergias.html"));
 });
 
 app.get("/stats", (req, res) => {
-    res.sendFile(path.join(__dirname + "\\..\\..\\public", "stats.html"));
+    res.sendFile(path.join(p, "stats.html"));
 });
 
 app.post("/do_login", (req, res) => {
@@ -57,12 +58,11 @@ app.post("/do_regist", (req, res) => {
 })
 
 app.get("/get_alergies", (req, res) => {
-    //res.status(200).send({"alergias": JSON.parse(fs.readFileSync('alergenios.json'))});
     res.status(200).send(JSON.parse(fs.readFileSync('alergenios.json'))[0].alergias.reverse());
 })
 
 app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname + "\\..\\..\\public", "error.html"));
+    res.sendFile(path.join(p, "login.html"));
 });
 
 app.listen(port, console.log(`Server listening on port ${port}`));

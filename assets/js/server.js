@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 8080;
 const path = require("path");
+const fs = require("fs");
 
 app.use(express.static(__dirname + "\\..\\..\\public"));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -53,6 +54,11 @@ app.post("/do_regist", (req, res) => {
         gender: gender,
         alergies: alergies
     });
+})
+
+app.get("/get_alergies", (req, res) => {
+    //res.status(200).send({"alergias": JSON.parse(fs.readFileSync('alergenios.json'))});
+    res.status(200).send(JSON.parse(fs.readFileSync('alergenios.json'))[0].alergias.reverse());
 })
 
 app.get("/*", (req, res) => {

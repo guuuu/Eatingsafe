@@ -635,6 +635,7 @@ body {
     height: 200px;
     border-radius: 100%;
     z-index: -1;
+    object-fit: cover;
 }
 
 .profile .pfcontent .top .group {
@@ -1066,6 +1067,7 @@ body {
     width: 200px;
     margin-left: 20px;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .alergias .main .texto p {

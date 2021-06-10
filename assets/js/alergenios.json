@@ -1,0 +1,101 @@
+[{
+    "alergias": [{
+            "alergia": {
+                "name": "Gluten",
+                "desc": "O glúten é um composto de proteínas de armazenamento denominadas prolaminas e glutaminas, que se unem com o amido no endosperma que nutre a planta embrionária durante a germinação das sementes de vários cereais da família das gramíneas Poaceae, subfamília Pooideae, principalmente das espécies da tribo Triticeae, como o trigo, cevada, triticale e centeio. Esses cereais são compostos por cerca de 40-70% de amido, 1-5% de lipídios, e 7-15% de proteínas gliadina, glutenina, albumina e globulina. Por sua estrutura bioquímica, esse tipo de glúten é, muitas vezes, denominado 'glúten triticeae', e popularmente conhecido como 'glúten de trigo'.",
+                "path": "assets/images/gluten.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Crustáceos",
+                "desc": "Os crustáceos lat. crusta, carapaça dura são animais invertebrados artropódes. Entre eles estão alguns dos animais mais comuns que conhecemos, como siris, caranguejos , tatuzinhos-de-jardim, lagostas, cracas e camarões. Há mais de 67.000 espécies descritas de Crustáceos da fauna atual, e provavelmente um número 5 ou 10 vezes maior de espécies estão ainda para serem descobertas e catalogadas. Eles se apresentam como os animais mais abundantes, diversificados e com maior distribuição nos oceanos. Os crustáceos exibem uma diversidade impressionante de forma, de hábitos e de tamanho. O menor crustáceo conhecido apresenta menos de 100de comprimento. Os maiores são os caranguejos-aranha do Japão Macrocheira kaempferi, com 4m de abertura de pernas, e o caranguejo gigante da Tasmânia Pseudocarcinus gigas. A maioria dos crustáceos são aquáticos, sendo encontrados em todas as profundidades dos diversos ambientes marinhos planctônicos, bentônicos. Também existem muitas espécies de água doce, além de grupos semi-terrestres e.g. manguezais. Alguns grupos obtiveram sucesso em ambiente terrestre. Geralmente os crustáceos tem hábito de vida livre, mas há grupos parasitas Branchiura e sesséis Cirripedia.",
+                "path": "assets/images/crab.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Ovos",
+                "desc": "Uma alergia alimentar é uma reação imunitária exagerada a determinado alimento. Os sintomas da reação alérgica podem variar de ligeiros a graves. Entre os sintomas mais comuns estão comichão, língua inchada, vómitos, diarreia, urticária, dor de estômago, dificuldades respiratórias e diminuição da pressão arterial. Os sintomas geralmente manifestam-se de alguns minutos a algumas horas após a exposição ao alergénio. Quando os sintomas são graves, a condição é denominada anafilaxia. As intolerâncias alimentares e a intoxicação alimentar são condições diferentes que não são causadas por uma reação imunitária.[",
+                "path": "assets/images/ovos.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Peixes",
+                "desc": "Uma alergia alimentar é uma reação imunitária exagerada a determinado alimento. Os sintomas da reação alérgica podem variar de ligeiros a graves. Entre os sintomas mais comuns estão comichão, língua inchada, vómitos, diarreia, urticária, dor de estômago, dificuldades respiratórias e diminuição da pressão arterial. Os sintomas geralmente manifestam-se de alguns minutos a algumas horas após a exposição ao alergénio. Quando os sintomas são graves, a condição é denominada anafilaxia. As intolerâncias alimentares e a intoxicação alimentar são condições diferentes que não são causadas por uma reação imunitária.[",
+                "path": "assets/images/peixes.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Amendoins",
+                "desc": "Alergia a amendoim é um tipo de alergia alimentar para amendoim. É diferente de alergia a nozes de árvore, com amendoim sendo leguminosas e não é verdade nozes. Os sintomas físicos de reação alérgica podem incluir coceira, urticária, inchaço, eczema, espirros, ataque de asma, dor abdominal, queda na pressão arterial, diarreia e parada cardíaca. Anafilaxia pode ocorrer. Aqueles com histórico de asma têm maior probabilidade de serem gravemente afetados. É devido a um hipersensibilidade tipo I reação do Sistema imune em indivíduos suscetíveis. A alergia é reconhecida 'como uma das alergias alimentares mais graves devido à sua prevalência, persistência e potencial gravidade da reação alérgica'. A prevenção pode ser parcialmente alcançada por meio da introdução precoce de amendoim na dieta de mulheres grávidas e bebês. Recomenda-se que bebês com alto risco recebam produtos com amendoim em áreas onde haja atendimento médico disponível desde os 4 meses de idade. O principal tratamento para anafilaxia é a injeção de epinefrina.'",
+                "path": "assets/images/amendoins.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Soja",
+                "desc": "Soja, também conhecido como bebida de soja, é uma bebida feita a partir dos grãos de soja. Ele ajuda a reduzir a gordura corporal e é uma opção para quem tem problemas com colesterol ou alergia a leite. Seu valor nutricional é inferior ao leite, mas pode ser preparado para ter o mesmo teor de proteínas o processo de fabricação pelo extrato da soja. Já Sollys, da Nestlé, e Soyos, da Su Fresh, produzem a bebida a partir da proteína isolada da soja. O extrato da soja é obtido através da moagem dos grãos de soja com água, processo no qual são preservados proteínas, parte dos carboidratos solúveis, gorduras insaturadas, vitaminas e minerais presentes na soja. Já a proteína isolada da soja é extraída da farinha de soja desengordurada, obtida da remoção dos componentes não proteicos dos grãos. Contém aproximadamente 90% de proteínas em base seca. Apesar de conter maior quantidad e de proteínas do que o extrato de soja, por ser concentrada, a proteína isolada de soja geralmente é diluída para o consumo e o produto final acaba oferecendo quantidades de proteínas similares às do extrato por porção. ",
+                "path": "assets/images/soja.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Lactose",
+                "desc": "Intolerância à lactose é uma condição em que a pessoa manifesta sintomas por não conseguir digerir corretamente a lactose, um açúcar presente nos lacticínios. O nível de tolerância à lactose até que os sintomas comecem a aparecer varia de pessoa para pessoa. Os sintomas mais comuns são dor abdominal, sensação de barriga inchada, diarreia, gases e náuseas. Estes sintomas têm geralmente início e ntre 30 e 120 minutos após a ingestão de leite ou de derivados de leite. A gravidade dos sintomas depende da quantidade ingerida. A condição não causa qualquer lesão no trato gastrointestinal. ",
+                "path": "assets/images/leite.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Frutos de casca rija",
+                "desc": "Um fruto de casca rija, em botânica, é um fruto seco com apenas uma semente raramente duas no qual a parede do ovário ou parte dela torna-se muito dura na maturidade. A maioria dos frutos de casca rija vem dos pistilos com ovários inferiores veja flor e não abrem na maturidade. Exemplos de frutos de casca rija verdadeiras são os frutos dos carvalhos bolotas, das avelaneiras, das faias, das castanheiras, das nogueiras e a castanha-de-caju. ",
+                "path": "assets/images/casca.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Aipo",
+                "desc": "O aipo pode causar a fotossensibilidade em indivíduos alérgicos, tendo por resultado a pele empolada após apenas uma exposição pequena do sol. Esta reacção é considerada principalmente nas máquinas desbastadoras, nos fabricantes de conservas, e naqueles que trabalham nas despensas.",
+                "path": "assets/images/aipo.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Mostarda",
+                "desc": "A alergia de alimento é uma resposta imune provocada por reacções imunes equivocadas às proteínas inofensivas no alimento que são estrutural similares homólogo aos alérgenos. Ocorre mais freqüentemente nos povos que têm outras tendências alérgicas, tais como a dermatite atópica. IgE é um anticorpo que reaja com a proteína do alimento e inicie uma cascata das reacções químicas, tendo por resultado uma reacção alérgica. Um destes produtos químicos é a histamina, que é responsável para a dilatação de vasos sanguíneos pequenos, causando a vermelhidão e o inchamento da pele; itching; e secreção aumentada da mucosa nasal, tendo por resultado um nariz ralo e um burning ou itching. Quando a maioria de a lergias de alimento produzirem reacções localizadas, em alguns casos, a reacção saem da mão e precipita uma liberação corpo-larga dos produtos químicos poderosos que provocam uma reacção anafiláctica, caracterizada em uma queda íngreme na pressão sanguínea, em chiar, e em muitos outros sintomas.",
+                "path": "assets/images/mostarda.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Sementes de sésamo",
+                "desc": "A alergia da semente de sésamo é calculada para ocorrer em até 2 de cada mil povos que consomem este alimento. Muitos destes indivíduos apresentam primeiramente com uma reacção anafiláctica às sementes de sésamo. O incidene da alergia da semente de sésamo é aproximadamente metade isso de uma alergia persistente ao leite de vaca. A semente de sésamo é um alérgeno muito poderoso, causando sintomas tais como o pruritus, a eritema generalizada, o angioedema da úvula, uma gota íngreme na pressão sanguínea, e a asma. Contudo, estas reacções severas são precedidas geralmente pelas mais suaves conhecidas como fragmentos de choque, com os sintomas do edema, do rhinitis, e da conjuntivite. Se estes sintomas adiantados são diagnosticados e tratados em tempo oportuno; o anaphylaxis pode ser evitado pela administração da medicamentação apropriada e de evitar a ingestão do disparador, o alimento decontenção do sésamo.",
+                "path": "assets/images/sesamo.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Dióxido de enxofre",
+                "desc": "Os sulfitos são definidos como dióxido de enxofre e vários sais inorgânicos de sulfito que podem libertar SO2 sob condições apropriadas 1. Podem ser encontrados em variados alimentos, bebidas e medicamentos, devido às suas propriedades antioxidantes, que evitam a oxidação e escurecimento dos alimentos, e antimicrobianas, atuando como conservantes 1, 2, 3. Neste artigo pode saber mais sobre as reações adversas a sulfitos, em que alimentos pode encontrar dióxido de enxofre e sulfitos e como identificá-los na rotulagem. A prevalência de sensibilidade aos sulfitos na população em geral é desconhecida, mas parece ser mais comum em asmáticos, particularmente aqueles que apresentam pólipos nasais e são sensíveis ao ácido acetilsalicílico aspirina, podendo precipitar crises de asma.",
+                "path": "assets/images/enxofre.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Tremoço",
+                "desc": "O tremoço género Lupinus, família Leguminosae é uma leguminosa que inclui cerca de 450 espécies. É um aperitivo muito apreciado pelos portugueses, muitas vezes chamado de “marisco dos pobres”. O seu consumo é comum em vários países europeus, especialmente nos países mediterrâneos. Desde o final dos anos 90, o seu uso pela indústria alimentar tem-se generalizado, devido ao seu valor nutricional, alta qualidade proteica, propriedades emulsionantes e baixo custo. 1 Sabia que a farinha de tremoço é utilizada pela indústria em produtos sem glúten e em substituição da soja, do leite e do ovo? É ainda desconhecida a prevalência de alergia ao tremoço na população em geral, mas parece restrita a certas áreas geográficas, possivelmente refletindo os diferentes hábitos alimentares e, portanto, o risco de exposição. 1 Até recentemente a legislação Europeia era a única que referia o tremoço como um alergénio de declaração obrigatória na rotulagem, no entanto, devido ao aumento generalizado do seu consumo, nomeadamente em produtos industrializados, desde 2018, passou a ser também declarado como alergénio na Austrália e Nova Zelândia. 2, 3",
+                "path": "assets/images/tremoço.jpg"
+            }
+        },
+        {
+            "alergia": {
+                "name": "Moluscos",
+                "desc": "A alergia aos mariscos é uma reação adversa imunológica do sistema imunológico, sendo a alergia alimentar mais frequente nos adultos. O camarão gambas é o tipo de marisco que mais frequentemente é associado às alergias, uma vez que é dos mariscos mais consumidos entre a população. No entanto, muitos outros tipos de marisco podem causar alergia. Marisco é uma designação culinária que engloba diferentes animais invertebrados aquáticos comestíveis, geralmente de água salgada. Existem diversos tipos de marisco. A maioria dos mariscos pertencem ao grupo dos crustáceos ou ao grupo dos moluscos, mas também se incluem animais de outros grupos, como por exemplo equinodermes.",
+                "path": "assets/images/molusco.jpg"
+            }
+        }
+    ]
+}]
